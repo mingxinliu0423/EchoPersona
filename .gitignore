@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+
+# Local environment variable files
+.env      👈 加这行
+
+# VSCode configs
+.vscode/
+
+# Datasets / logs
+*.log
+data/*.json
