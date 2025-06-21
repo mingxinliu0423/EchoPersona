@@ -10,8 +10,9 @@ env/
 venv/
 
 # Local environment variable files
-.env      👈 加这行
-
+.env
+models
+data
 # VSCode configs
 .vscode/
 
