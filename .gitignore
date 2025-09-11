@@ -1,0 +1,5 @@
+LLaMA-Factory/
+models/DeepSeek-V2-Lite-Chat/model-00001-of-000004.safetensors
+models/DeepSeek-V2-Lite-Chat/model-00002-of-000004.safetensors
+models/DeepSeek-V2-Lite-Chat/model-00003-of-000004.safetensors
+models/L3.1-MOE-13.7B/moe13b-q4ks.gguf
