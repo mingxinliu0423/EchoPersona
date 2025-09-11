@@ -1,0 +1,16 @@
+# 拿到服务器后放到 /etc/systemd/system/ 再启用
+[Unit]
+Description=LLM Inference Server
+After=network.target
+
+[Service]
+Type=simple
+User=%i
+WorkingDirectory=/srv/llm
+EnvironmentFile=/srv/llm/.env
+ExecStart=/bin/bash -lc 'conda activate llmserve && uvicorn server:app --host ${HOST} --port ${PORT}'
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

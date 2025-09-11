@@ -1,0 +1,23 @@
+name: llmserve
+channels: [conda-forge, defaults]
+dependencies:
+  - python=3.10
+  - pip
+  # 构建工具（给 llama-cpp-python 源码编译用）
+  - cmake>=3.26
+  - ninja
+  - git
+  - libopenblas
+  # 可选：基础打包工具
+  - setuptools
+  - wheel
+  - pip:
+      - "llama-cpp-python==0.2.90"
+      - "fastapi==0.116.1"
+      - "uvicorn==0.35.0"
+      - "gradio>=5.40,<6"
+      - "pydantic>=2,<3"
+      - "python-dotenv>=1.0"
+      - "huggingface-hub>=0.34,<0.35"
+      - hf-transfer
+      - "diskcache>=5.6" 
