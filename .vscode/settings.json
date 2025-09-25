@@ -1,0 +1,19 @@
+{
+    "files.watcherExclude": {
+        "**/.git/**": true,
+        "**/node_modules/**": true,
+        "**/__pycache__/**": true
+    },
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/__pycache__": true,
+        "**/models/**/*.safetensors": true,
+        "**/models/**/*.bin": true
+    },
+    "files.associations": {
+        "*.jsonl": "jsonl",
+        "*.gguf": "binary"
+    },
+    "python.defaultInterpreterPath": "~/miniconda3/envs/dl/bin/python"
+}
